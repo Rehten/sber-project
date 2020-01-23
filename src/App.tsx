@@ -1,26 +1,30 @@
 import React, {PropsWithChildren} from 'react';
 import {HashRouter as Router, Route, Link, Switch} from 'react-router-dom'
 import './App.css';
-import {AppState} from "./store";
+import {AppState} from "./redux";
 import {connect} from "react-redux";
 import {ThunkAction} from "redux-thunk";
 import {Action} from "redux";
-import {thunkSendMessage} from "./thunks";
+import {thunkPostEntity} from "./redux/test-entity/thunks";
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 
 import List, { Item } from 'devextreme-react/list';
 
 import 'devextreme/dist/css/dx.common.css';
 import 'devextreme/dist/css/dx.light.compact.css';
+import {TestEntity} from "./redux/test-entity/types";
 
 interface Props extends PropsWithChildren<{}> {
-    thunkSendMessage: (message: string) => ThunkAction<void, AppState, null, Action<string>>
+    testEntity: TestEntity | null;
+    thunkPostEntity: (id: number) => ThunkAction<void, AppState, null, Action<string>>
 }
 
 const App = (props: Props) => {
     return (
         <Router>
             <div>
+                <h1>Test Entity id is {props.testEntity?.id}</h1>
+                <button onClick={() => props.thunkPostEntity(1)}>Call thunk</button>
                 <Formik
                     initialValues={{ email: '', password: '' }}
                     validate={values => {
@@ -53,10 +57,6 @@ const App = (props: Props) => {
                         </Form>
                     )}
                 </Formik>
-                <button onClick={() => {
-                    props.thunkSendMessage('MyMessage')
-                }}>test Redux
-                </button>
                 <List>
                     <Item>orange</Item>
                     <Item>white</Item>
@@ -78,11 +78,10 @@ const App = (props: Props) => {
 };
 
 const mapStateToProps = (state: AppState) => ({
-    system: state.system,
-    chat: state.chat
+    testEntity: state.testEntity
 });
 
 export default connect(
     mapStateToProps,
-    {thunkSendMessage}
+    {thunkPostEntity}
 )(App);

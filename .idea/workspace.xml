@@ -2,15 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5adc03b7-1b46-4f90-9b28-1f2525fe8b7d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/redux/test-entity/actions.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/test-entity/reducers.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/test-entity/types.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/types/entity/entity.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/types/services/create.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/types/services/crud.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/types/services/delete.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/types/services/read.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/types/services/reverse.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/types/services/straight.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/types/services/update.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/chat/actions.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/chat/reducers.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/chat/types.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/system/actions.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/system/reducers.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/system/types.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/thunks.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/test-entity/thunks.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -26,7 +51,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/types" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -35,7 +60,13 @@
     <property name="ts.external.directory.path" value="C:\Users\Mafu7\WebstormProjects\sber-project\node_modules\typescript\lib" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Mafu7\WebstormProjects\sber-project\src\types\services" />
+      <recent name="C:\Users\Mafu7\WebstormProjects\sber-project\src" />
+      <recent name="C:\Users\Mafu7\WebstormProjects\sber-project\src\store\test-entity" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Mafu7\WebstormProjects\sber-project\src\types" />
       <recent name="C:\Users\Mafu7\WebstormProjects\sber-project\src" />
     </key>
   </component>
@@ -76,7 +107,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1579691128399</updated>
-      <workItem from="1579691129976" duration="3128000" />
+      <workItem from="1579691129976" duration="4155000" />
+      <workItem from="1579779007294" duration="2319000" />
     </task>
     <task id="LOCAL-00001" summary="add redux with thunks">
       <created>1579693365615</created>
@@ -85,7 +117,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579693365615</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add redux with thunks">
+      <created>1579695273490</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1579695273490</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -96,18 +135,22 @@
     <option name="LAST_COMMIT_MESSAGE" value="add redux with thunks" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="393" y="6" key="CommitChangelistDialog2" timestamp="1579693364683">
+    <state x="393" y="6" key="CommitChangelistDialog2" timestamp="1579695272674">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="393" y="6" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1579693364683" />
+    <state x="393" y="6" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1579695272674" />
+    <state x="93" y="93" width="1350" height="638" key="DiffContextDialog" timestamp="1579780405803">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="93" y="93" width="1350" height="638" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1579780405803" />
     <state x="641" y="305" width="258" height="213" key="Github.ShareDialog" timestamp="1579691795664">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="641" y="305" width="258" height="213" key="Github.ShareDialog/0.0.1536.824@0.0.1536.824" timestamp="1579691795664" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1579693367542">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1579695275354">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1579693367542" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1579695275354" />
     <state x="425" y="187" key="run.anything.popup" timestamp="1579691668921">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

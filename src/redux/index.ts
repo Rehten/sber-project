@@ -1,13 +1,10 @@
 import { createStore, combineReducers, applyMiddleware } from "redux";
 import thunkMiddleware from "redux-thunk";
 import { composeWithDevTools } from "redux-devtools-extension";
-
-import { systemReducer } from "./system/reducers";
-import { chatReducer } from "./chat/reducers";
+import {testEntityReducer} from "./test-entity/reducers";
 
 const rootReducer = combineReducers({
-  system: systemReducer,
-  chat: chatReducer
+  testEntity: testEntityReducer
 });
 
 export type AppState = ReturnType<typeof rootReducer>;
