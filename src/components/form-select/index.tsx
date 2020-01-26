@@ -1,4 +1,4 @@
-import {SelectBox, TextBox} from "devextreme-react";
+import {SelectBox} from "devextreme-react";
 import {useField} from "formik";
 import React from "react";
 
@@ -10,7 +10,7 @@ interface Option {
 interface Props {
     value?: string;
     name: string;
-    options: Array<Option>
+    options: Array<Option>;
     disabled?: boolean;
 }
 
@@ -20,11 +20,14 @@ export const FormSelect = ({value, name, options, disabled}: Props) => {
 
     return <SelectBox
         {...field}
-        defaultValue={value}
         dataSource={options}
+        displayExpr="label"
+        valueExpr="value"
+        defaultValue={options[0].value}
         disabled={disabled}
-        onValueChanged={({value}) => setValue(value.value)}
+        onValueChanged={({value}) => {
+            setValue(value);
+        }}
         itemRender={({label}: Option) => label}
-        fieldRender={(option: Option) => <TextBox defaultValue={option ? option.label : "Select..."} readOnly />}
     />;
 };

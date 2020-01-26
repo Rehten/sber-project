@@ -1,14 +1,14 @@
 import {Straight} from "../types/services/straight";
-import {BackendPolygonFilter, PolygonFilter} from "../entities/polygon-filter";
+import {BackendPolygonEntity, PolygonEntity} from "../entities/polygon-entity";
 import {Reverse} from "../types/services/reverse";
 import timeConverter from "./time-converter";
 import {Time} from "../entities/time";
 
-class PolygonFilterConverter implements
-    Straight<BackendPolygonFilter, PolygonFilter>,
-    Reverse<BackendPolygonFilter, PolygonFilter>
+class PolygonEntityConverter implements
+    Straight<BackendPolygonEntity, PolygonEntity>,
+    Reverse<BackendPolygonEntity, PolygonEntity>
 {
-    straight(data: BackendPolygonFilter): PolygonFilter {
+    straight(data: BackendPolygonEntity): PolygonEntity {
         return {
             dataFrom: timeConverter.straight(data.dataFrom).date,
             dataTo: timeConverter.straight(data.dataTo).date,
@@ -17,7 +17,7 @@ class PolygonFilterConverter implements
         };
     }
 
-    reverse(data: PolygonFilter): BackendPolygonFilter {
+    reverse(data: PolygonEntity): BackendPolygonEntity {
         return {
             dataFrom: timeConverter.reverse(new Time(data.dataFrom)),
             dataTo: timeConverter.reverse(new Time(data.dataTo)),
@@ -27,6 +27,6 @@ class PolygonFilterConverter implements
     }
 }
 
-const polygonFilterConverter: PolygonFilterConverter = new PolygonFilterConverter();
+const polygonEntityConverter: PolygonEntityConverter = new PolygonEntityConverter();
 
-export default polygonFilterConverter;
+export default polygonEntityConverter;
