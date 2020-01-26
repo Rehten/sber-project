@@ -1,3 +1,3 @@
 export interface Read<O> {
-    read(url: Record<string, string>): Promise<O>;
+    read(data: Record<string, any>): Promise<O>;
 }

@@ -14,8 +14,6 @@ export const FormInput = ({value, name}: Props) => {
     return <TextBox
         {...field}
         defaultValue={value}
-        onChange={({event}) => {
-            field.onChange(event);
-        }}
+        onChange={({event}) => field.onChange(event)}
     />;
 };

@@ -1,5 +1,5 @@
 import {Severities} from "./severity";
-import {TimeJSON} from "./time-json";
+import {BackendTime} from "./backend-time";
 
 export interface PolygonFilter {
     dataFrom: Date;
@@ -8,9 +8,9 @@ export interface PolygonFilter {
     category: string;
 }
 
-export interface PolygonFilterJSON {
-    dataFrom: TimeJSON;
-    dataTo: TimeJSON;
+export interface BackendPolygonFilter {
+    dataFrom: BackendTime;
+    dataTo: BackendTime;
     severity: Severities;
     category: string;
 }

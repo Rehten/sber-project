@@ -21,11 +21,9 @@ export const FormSelect = ({value, name, options, disabled}: Props) => {
     return <SelectBox
         {...field}
         defaultValue={value}
-        onValueChanged={({value}) => {
-            setValue(value.value);
-        }}
         dataSource={options}
         disabled={disabled}
+        onValueChanged={({value}) => setValue(value.value)}
         itemRender={({label}: Option) => label}
         fieldRender={(option: Option) => <TextBox defaultValue={option ? option.label : "Select..."} readOnly />}
     />;
