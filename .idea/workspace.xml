@@ -2,19 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5adc03b7-1b46-4f90-9b28-1f2525fe8b7d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/mock-server" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/chart/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/polygon/descriptions.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/polygon-chart-converter.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/polygon-form/index.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mock-server" beforeDir="false" afterPath="$PROJECT_DIR$/mock-server" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mock-server/mock-server.js" beforeDir="false" afterPath="$PROJECT_DIR$/mock-server/mock-server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/form-select/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/form-select/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/chart/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/chart/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/polygon-form/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/polygon-form/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/polygon-filter.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/polygon-entity.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/polygon/descriptions.ts" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/polygon/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/polygon/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/polygon-filter-api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/polygon-filter-api.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/polygon-filter-converter.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/polygon-entity-converter.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/polygon-chart-converter.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/polygon-chart-converter.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +23,7 @@
         <option value="JavaScript File" />
         <option value="TypeScript JSX File" />
         <option value="TypeScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -45,6 +42,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/mock-server/entities" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -60,6 +58,7 @@
       <recent name="C:\Users\Mafu7\WebstormProjects\sber-project\src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Mafu7\WebstormProjects\sber-project\src\components\polygon-form" />
       <recent name="C:\Users\Mafu7\WebstormProjects\sber-project\src\types\services" />
       <recent name="C:\Users\Mafu7\WebstormProjects\sber-project\src" />
       <recent name="C:\Users\Mafu7\WebstormProjects\sber-project\src\store\test-entity" />
@@ -104,7 +103,7 @@
       <updated>1579691128399</updated>
       <workItem from="1579691129976" duration="4155000" />
       <workItem from="1579779007294" duration="3301000" />
-      <workItem from="1579954629933" duration="43816000" />
+      <workItem from="1579954629933" duration="48581000" />
     </task>
     <task id="LOCAL-00001" summary="add redux with thunks">
       <created>1579693365615</created>
@@ -141,7 +140,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580029540956</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Motherfucker">
+      <created>1580062324824</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1580062324824</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -162,10 +168,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1579956909237" />
-    <state x="393" y="6" key="CommitChangelistDialog2" timestamp="1580029535975">
+    <state x="393" y="6" key="CommitChangelistDialog2" timestamp="1580062319284">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="393" y="6" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1580029535975" />
+    <state x="393" y="6" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1580062319284" />
     <state x="93" y="93" width="1350" height="638" key="DiffContextDialog" timestamp="1579780405803">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -174,14 +180,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="641" y="305" width="258" height="213" key="Github.ShareDialog/0.0.1536.824@0.0.1536.824" timestamp="1579691795664" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1580029543647">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1580062326345">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1580029543647" />
-    <state x="425" y="187" key="run.anything.popup" timestamp="1579691668921">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1580062326345" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1580065527315">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1579691668921" />
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1580065527315" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1579956115719">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

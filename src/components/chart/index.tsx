@@ -38,7 +38,14 @@ export const CustomChart = ({data, descriptions}: Props) => {
     const series: Array<SeriesData> = [];
 
     if (data.length) {
-        const seriesTemplate: YAxisLineValues = data[0].values;
+        let seriesTemplate: YAxisLineValues = {};
+
+        for (const series of data) {
+            seriesTemplate = {
+                ...seriesTemplate,
+                ...series.values,
+            };
+        }
 
         for (const valueField in seriesTemplate) {
             if (seriesTemplate.hasOwnProperty(valueField)) {
@@ -49,6 +56,8 @@ export const CustomChart = ({data, descriptions}: Props) => {
             }
         }
     }
+
+    console.log(series, dataSource);
 
     return (
         <Chart

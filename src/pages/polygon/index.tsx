@@ -3,28 +3,30 @@ import {PolygonForm} from "../../components/polygon-form";
 import {PolygonEntity, PolygonData} from "../../entities/polygon-entity";
 import {Severities} from "../../entities/severity";
 import polygonFilterApi from "../../services/polygon-filter-api";
-import {CustomChart, YAxisLine} from "../../components/chart";
+import {CustomChart, Props as ChartProps} from "../../components/chart";
 import polygonChartConverter from "../../services/polygon-chart-converter";
-import {descriptions} from "./descriptions";
 
 export const PolygonPage = () => {
-    const [chartData, setChartData] = useState<YAxisLine[]>([]);
+    const [chartProps, setChartProps] = useState<ChartProps>({
+        descriptions: {},
+        data: []
+    });
     const entity: PolygonEntity = {
-        dataFrom: new Date(),
+        dataFrom: new Date(0),
         dataTo: new Date(),
-        severity: Severities.High,
-        category: 'Category-4'
+        severity: Severities.Unknown,
+        category: ''
     };
 
     const handleSubmit = async (formData: PolygonEntity): Promise<void> => {
         const response: PolygonData = await polygonFilterApi.read(formData);
-        const chartDataSource: YAxisLine[] = polygonChartConverter.straight(response).data;
+        const updatedChartProps: ChartProps = polygonChartConverter.straight(response);
 
-        setChartData(chartDataSource);
+        setChartProps(updatedChartProps);
     };
 
     return (<React.Fragment>
         <PolygonForm entity={entity} onSubmit={handleSubmit} />
-        <CustomChart data={chartData} descriptions={descriptions} />
+        <CustomChart {...chartProps} />
     </React.Fragment>);
 };

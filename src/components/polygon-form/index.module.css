@@ -1,0 +1,9 @@
+.polygonForm {
+    width: 900px;
+}
+
+.polygonForm>div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
